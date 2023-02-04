@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Olympics Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link rel="icon" type="image/x-icon" href="img/olympic.ico">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <!--<link href="css/sb-admin-w.css" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&amp;display=swap" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://plotapi.com/static/css/tippy.translucent.css">
+
+    
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <img src="../Proyecto Personal/img/logo-olympics.svg" class="navbar-brand-img" alt="olympics_logo">
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="material-icons" style="font-size:18px">dashboard</i>
+                    <span>Summary</span>
+                </a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Interface
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="history.html" >
+                    <i class="fas fas fa-scroll"></i>
+                    <span>History</span>
+                </a>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="sports.html" >
+                    <i class="fas fa-volleyball-ball"></i>
+                    <span>Sports</span>
+                </a>
+
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="events.html" >
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Upcoming Events</span>
+                </a>
+
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="author.html" >
+                    <i class="fas fa-user-circle"></i>
+                    <span>Author</span>
+                </a>
+
+            </li>
+
+
+
+
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+            <!-- Sidebar Message -->
+
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <h1 class="h3 mb-2 text-gray-800">Olympic Summer & Winter Games
+                    <p dir="auto">
+                    <span style="font-weight: 400; color: var(--mq-txt-color, rgb(32, 33, 35)); font-size:6.5mm;">Olympic Sports </span> 
+                    </p>
+                    </h1>
+                    <ul class="navbar-nav ml-auto">
+                        <label class="switch">
+                            
+                            <input type="checkbox" checked >
+                            <span class="slider round"></span>
+                        </label>
+                        </ul>
+
+
+                    
+                </nav>
+                
+
+
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div id="main_content" class="container-fluid">
+                    <h1 r>SUMMER</h1>
+
+                    <div class="grid">
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/3x3_basketball_pictogram.svg/300px-3x3_basketball_pictogram.svg.png?20220821164529" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Archery_pictogram.svg/300px-Archery_pictogram.svg.png?20220821164700" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Athletics_pictogram.svg/300px-Athletics_pictogram.svg.png?20220821164742" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Athletics_%28discus_throw%29_pictogram.svg/300px-Athletics_%28discus_throw%29_pictogram.svg.png?20220822015126" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Athletics_%28hammer_throw%29_pictogram.svg/300px-Athletics_%28hammer_throw%29_pictogram.svg.png?20220304123558" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Athletics_%28high_jump%29_pictogram.svg/600px-Athletics_%28high_jump%29_pictogram.svg.png?20220902032206" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Athletics_%28hurdles_running%29_pictogram.svg/300px-Athletics_%28hurdles_running%29_pictogram.svg.png?20220304135535" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Athletics_%28javelin%29_pictogram.svg/300px-Athletics_%28javelin%29_pictogram.svg.png?20220303171628" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Athletics_%28long_jump%29_pictogram.svg/600px-Athletics_%28long_jump%29_pictogram.svg.png?20201017155628" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Athletics_%28middle-long_distance_running%29_pictogram.svg/600px-Athletics_%28middle-long_distance_running%29_pictogram.svg.png?20220822015502" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Athletics_%28pole_vault%29_pictogram.svg/600px-Athletics_%28pole_vault%29_pictogram.svg.png?20220822015402" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Athletics_%28relay_running%29_pictogram.svg/300px-Athletics_%28relay_running%29_pictogram.svg.png?20220304131339" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Athletics_%28shot_put%29_pictogram.svg/300px-Athletics_%28shot_put%29_pictogram.svg.png?20220304123725" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Athletics_%28steeplechase_running%29_pictogram.svg/300px-Athletics_%28steeplechase_running%29_pictogram.svg.png?20220304135454" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Badminton_pictogram.svg/300px-Badminton_pictogram.svg.png?20100215214429" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Basketball_pictogram.svg/300px-Basketball_pictogram.svg.png?20080104222359" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Boxing_pictogram.svg/300px-Boxing_pictogram.svg.png?20100215215349" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Canoeing_%28flatwater%29_pictogram.svg/300px-Canoeing_%28flatwater%29_pictogram.svg.png?20100215215743" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Climbing_pictogram.svg/300px-Climbing_pictogram.svg.png?20091108181056" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Cycling_%28BMX_freestyle%29_pictogram.svg/300px-Cycling_%28BMX_freestyle%29_pictogram.svg.png?20220212203707" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Cycling_%28mountain_biking%29_pictogram.svg/300px-Cycling_%28mountain_biking%29_pictogram.svg.png?20100215220757" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Cycling_%28track%29_pictogram.svg/300px-Cycling_%28track%29_pictogram.svg.png?20100215220945" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/DanceSport_pictogram.svg/300px-DanceSport_pictogram.svg.png?20211012031223" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Diving_pictogram.svg/300px-Diving_pictogram.svg.png?20100215221308" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Equestrian_pictogram.svg/300px-Equestrian_pictogram.svg.png?20201103165821" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Fencing_pictogram.svg/300px-Fencing_pictogram.svg.png?20221102111432" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Football_pictogram.svg/300px-Football_pictogram.svg.png?20221031183724" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Golf_pictogram.svg/300px-Golf_pictogram.svg.png?20221102112112" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Gymnastics_%28artistic_-_balance_beam%29_pictogram.svg/300px-Gymnastics_%28artistic_-_balance_beam%29_pictogram.svg.png?20221102123556" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Gymnastics_%28artistic_-_floor%29_pictogram.svg/300px-Gymnastics_%28artistic_-_floor%29_pictogram.svg.png?20221102120644" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Gymnastics_%28artistic_-_horizontal_bar%29_pictogram.svg/600px-Gymnastics_%28artistic_-_horizontal_bar%29_pictogram.svg.png?20201030133213" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Gymnastics_%28artistic_-_parallel_bars%29_pictogram.svg/600px-Gymnastics_%28artistic_-_parallel_bars%29_pictogram.svg.png?20201030134619" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Gymnastics_%28artistic_-_pommel_horse%29_pictogram.svg/600px-Gymnastics_%28artistic_-_pommel_horse%29_pictogram.svg.png?20201030134750" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Gymnastics_%28artistic_-_rings%29_pictogram.svg/300px-Gymnastics_%28artistic_-_rings%29_pictogram.svg.png?20220302182507" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Handball_pictogram.svg/300px-Handball_pictogram.svg.png?20221031183629" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Judo_pictogram.svg/300px-Judo_pictogram.svg.png?20100215223922" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Open_water_swimming_pictogram.svg/300px-Open_water_swimming_pictogram.svg.png?20120910184724" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Rowing_pictogram.svg/300px-Rowing_pictogram.svg.png?20100215224751" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Sailing_pictogram.svg/300px-Sailing_pictogram.svg.png?20100526223717" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Shooting_pictogram.svg/300px-Shooting_pictogram.svg.png?20100215225306" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Skateboarding_pictogram.svg/300px-Skateboarding_pictogram.svg.png?20201102105857" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Surfing_pictogram.svg/300px-Surfing_pictogram.svg.png?20201102102652" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Swimming_pictogram.svg/300px-Swimming_pictogram.svg.png?20100215225803" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Synchronized_swimming_pictogram.svg/300px-Synchronized_swimming_pictogram.svg.png?20100215230034" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Table_tennis_pictogram.svg/300px-Table_tennis_pictogram.svg.png?20221031175938" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Taekwondo_pictogram.svg/300px-Taekwondo_pictogram.svg.png?20211023171220" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tennis_pictogram.svg/300px-Tennis_pictogram.svg.png?20220324184231" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Triathlon_pictogram.svg/300px-Triathlon_pictogram.svg.png?20200526172539" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Volleyball_%28beach%29_pictogram.svg/300px-Volleyball_%28beach%29_pictogram.svg.png?20100215230857" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Volleyball_%28indoor%29_pictogram.svg/300px-Volleyball_%28indoor%29_pictogram.svg.png?20220902031819" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Water_polo_pictogram.svg/300px-Water_polo_pictogram.svg.png?20100215231225" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Weightlifting_pictogram.svg/300px-Weightlifting_pictogram.svg.png?20221102114529" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Wrestling_pictogram.svg/300px-Wrestling_pictogram.svg.png?20100215232021" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Modern_pentathlon_pictogram.svg/300px-Modern_pentathlon_pictogram.svg.png?20201029122418" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Gymnastics_%28rhythmic%29_pictogram.svg/300px-Gymnastics_%28rhythmic%29_pictogram.svg.png?20100215223014" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Field_hockey_pictogram.svg/300px-Field_hockey_pictogram.svg.png?20130311143336" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Cycling_%28BMX%29_pictogram.svg/300px-Cycling_%28BMX%29_pictogram.svg.png?20100215213504" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Rugby_sevens_pictogram.svg/281px-Rugby_sevens_pictogram.svg.png?20181105194143" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/High_jump_pictogram.svg/300px-High_jump_pictogram.svg.png?20141113174418" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Gymnastics_%28artistic_-_vault%29_pictogram.svg/300px-Gymnastics_%28artistic_-_vault%29_pictogram.svg.png?20220302180257" /></div>
+
+                       
+
+
+
+
+
+                      </div>
+
+                    <!-- Page Heading -->
+
+
+                    <!-- Content Row -->
+
+
+
+                </div>
+
+                <div id="secondary_content" class="container-fluid">
+                    <h1 r>WINTER</h1>
+
+                    <div class="grid">
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Alpine_skiing_pictogram.svg/300px-Alpine_skiing_pictogram.svg.png?20171029103746" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Biathlon_pictogram.svg/300px-Biathlon_pictogram.svg.png?20220210123025" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Bobsleigh_pictogram.svg/300px-Bobsleigh_pictogram.svg.png?20100215233857" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Cross_country_skiing_pictogram.svg/300px-Cross_country_skiing_pictogram.svg.png?20100215234212" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Curling_pictogram.svg/300px-Curling_pictogram.svg.png?20100216000723" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Figure_skating_pictogram.svg/300px-Figure_skating_pictogram.svg.png?20080103074243" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Freestyle_skiing_%28Ski_cross%29_pictogram.svg/300px-Freestyle_skiing_%28Ski_cross%29_pictogram.svg.png?20220304183730" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Freestyle_skiing_pictogram.svg/300px-Freestyle_skiing_pictogram.svg.png?20080103074314" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ice_hockey_pictogram.svg/300px-Ice_hockey_pictogram.svg.png?20080104203640" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Luge_pictogram.svg/300px-Luge_pictogram.svg.png?20080103074432" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Military_patrol_pictogram.svg/600px-Military_patrol_pictogram.svg.png?20170618161504" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Nordic_combined_pictogram.svg/300px-Nordic_combined_pictogram.svg.png?20220210120821" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Ringette_pictogram.png?20190404090155" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Short_track_speed_skating_pictogram.svg/300px-Short_track_speed_skating_pictogram.svg.png?20080103074628" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Shorttrack_pictogram.png?20220223092238" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Skeleton_pictogram.svg/300px-Skeleton_pictogram.svg.png?20080103074705" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Ski_jumping_pictogram.svg/300px-Ski_jumping_pictogram.svg.png?20080103074751" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Ski_mountaineering_pictogram.svg/300px-Ski_mountaineering_pictogram.svg.png?20181026135144" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Snowboard_Cross_pictogram.svg/300px-Snowboard_Cross_pictogram.svg.png?20220304184206" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Snowboarding_pictogram.svg/300px-Snowboarding_pictogram.svg.png?20080103074857" /></div>
+                        <div class="square img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Speed_skating_pictogram.svg/300px-Speed_skating_pictogram.svg.png?20080103074934" /></div>
+      
+
+
+
+
+
+
+
+                      </div>
+
+                    <!-- Page Heading -->
+
+
+                    <!-- Content Row -->
+
+
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Coding Bootcamp ESPOL - William Tandazo</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+</body>
+
+</html>

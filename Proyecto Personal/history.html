@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Olympics Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link rel="icon" type="image/x-icon" href="img/olympic.ico">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <!--<link href="css/sb-admin-w.css" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&amp;display=swap" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://plotapi.com/static/css/tippy.translucent.css">
+
+    
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <img src="../Proyecto Personal/img/logo-olympics.svg" class="navbar-brand-img" alt="olympics_logo">
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="material-icons" style="font-size:18px">dashboard</i>
+                    <span>Summary</span>
+                </a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Interface
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="history.html" >
+                    <i class="fas fas fa-scroll"></i>
+                    <span>History</span>
+                </a>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="sports.html" >
+                    <i class="fas fa-volleyball-ball"></i>
+                    <span>Sports</span>
+                </a>
+
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="events.html" >
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Upcoming Events</span>
+                </a>
+
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="author.html"  data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Author</span>
+                </a>
+
+            </li>
+
+
+
+
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+            <!-- Sidebar Message -->
+
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <h1 class="h3 mb-2 text-gray-800">Olympic Summer & Winter Games
+                    <p dir="auto">
+                    <span style="font-weight: 400; color: var(--mq-txt-color, rgb(32, 33, 35)); font-size:6.5mm;">A Brief History </span> 
+                    </p>
+                    </h1>
+
+
+                    
+                </nav>
+                
+
+
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+
+
+                    <!-- Content Row -->
+
+                    <div class="row">
+                        <div class="col-lg-6 d-none d-lg-block bg-history-image"></div>
+                        <div class="col-lg-6">
+                            <div class="p-5">
+                                <div class="text-center">
+                                    <h1 class="h4 text-gray-900 mb-4">History of the Olympic Games</h1>
+                                </div>
+
+                                <hr>
+
+                                <p style="font-size:100%;" align="justify";> The modern format of this event was inspired by the ancient Olympic Games , held in Olympia, 
+                                    Greece from the 8th century BC to the 4th century AD. Baron Pierre de Coubertin founded the International Olympic Committee (IOC) in 1894,
+                                     leading to the first modern Games in Athens in 1896. The IOC is the governing body of the Olympic Movement (which encompasses all 
+                                     entities and individuals involved in the Olympic Games) with the Olympic Charter defining its structure and authority.</p>
+
+                                <p style="font-size:100%;" align="justify"> The evolution of the Olympic Movement during the 20th and 21st centuries has resulted in several changes to the Olympic
+                                     Games. Some of these adjustments include the creation of the Winter Olympic Games for snow and ice sports, the Paralympic Games for athletes 
+                                     with disabilities, the Youth Olympic Games for athletes aged 14 to 18, the five Continental games (Pan American, African, Asian, European, 
+                                     and Pacific), and the World Games for sports that are not contested in the Olympic Games. The IOC also endorses the Deaflympics and the Special 
+                                     Olympics. The IOC has needed to adapt to a variety of economic, political, and technological advancements. The abuse of amateur rules by the 
+                                     Eastern Bloc nations prompted the IOC to shift away from pure amateurism, as envisioned by Coubertin, to the acceptance of professional athletes
+                                    participating at the Games. The growing importance of mass media has created the issue of corporate sponsorship and general commercialisation 
+                                    of the Games. World wars led to the cancellation of the 1916, 1940, and 1944 Olympics; large-scale boycotts during the Cold War limited
+                                    participation in the 1980 and 1984 Olympics; and the 2020 Olympics were postponed until 2021 as a result of the COVID-19 pandemic.
+                                    Source: <a href="https://en.wikipedia.org/wiki/Olympic_Games">Wikipedia</a></p>
+                                
+                                
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Coding Bootcamp ESPOL - William Tandazo</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+</body>
+
+</html>
