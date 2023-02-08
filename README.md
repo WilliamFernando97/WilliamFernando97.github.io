@@ -2,4 +2,4 @@
 ## https://WilliamFernando97.github.io
 
 # Personal Project
-## https://WilliamFernando97.github.io/Proyecto Personal/index.html
+## https://williamfernando97.github.io/Proyecto%20Personal/index.html
