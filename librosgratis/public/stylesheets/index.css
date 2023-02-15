@@ -1,0 +1,111 @@
+/* Todos los elementos HTML usarán la fuente "Open Sans", sans-serif */
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* El elemento body sin margen y sin relleno */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* El elemento header tendrá una imagen de fondo */
+
+
+
+header {
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: .85;
+}
+
+
+header {
+    padding-top: 15%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+header {    
+    display: grid;
+    grid-template-areas: "a b"
+                         "c d";
+    column-gap: 2rem;
+}
+
+header h1 {
+    position: relative;
+    grid-area: a;
+    font-size: 4rem;
+    color: black !important;
+}
+
+header p {
+    grid-area: c;
+    line-height: 1.5rem;
+    font-size: 1.6rem;
+    color: black;
+
+}
+
+
+header div {
+    grid-area: d;
+}
+
+header div img {
+    width: 20%;
+    margin: 0 auto; 
+    background-color: white;
+    padding: 2%;
+    margin-top: 1% !important;
+    margin-bottom: 1% !important;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    padding-top: 1%;
+}
+
+h2 {
+    font-family: Helvetica;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    padding-bottom: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+main h2 {
+    font: 2em "Helvetica"; 
+}
+
+main div {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+main div img {
+    width: 10rem;
+    margin: 0 ; 
+    background-color: white;
+    border: white 1rem solid;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+}

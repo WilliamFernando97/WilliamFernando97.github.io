@@ -1,0 +1,93 @@
+/* Todos los elementos HTML usarán la fuente "Open Sans", sans-serif */
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* El elemento body sin margen y sin relleno */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header header"
+                         "main aside";
+}
+
+.bold {
+    font-weight: bold;
+}
+
+a {
+    font-weight: bold;
+}
+
+
+header {
+    grid-area: header;
+}
+
+header {
+    padding: 0 10rem;
+}
+
+
+main {
+    grid-area: main;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main #container {
+    display: flex;
+    flex-direction: row;
+}
+
+main #container #data {
+    padding-right: 5rem;
+}
+
+main #container #data p#description {
+    text-align: justify;
+}
+
+main #container #data #publicacion {
+    text-align: right;
+}
+
+main #container img {
+    width: 35rem;
+    border: white 1rem solid;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+    margin-right: 2rem;
+}
+
+main {
+    margin-right: 1rem;
+    padding-right: 1rem;
+    padding-left: 10rem;
+    border-right: 0.4rem solid #a93816;
+}
+
+aside {
+    grid-area: aside;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding-right: 10rem;
+}
+
+aside img {
+    width: 5rem;
+    border: white 1rem solid;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+}
